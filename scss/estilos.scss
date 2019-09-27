@@ -1,0 +1,960 @@
+//-----------------------
+// PATRON DE COLORES
+//-----------------------
+$texto:#111111;
+$azulmarino: rgb(0, 2, 4);
+
+
+/*---------------------------------
+SECCION INTRO
+------------------------------------*/
+.intro-wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    z-index: 9999;
+    background: black;
+    color: white;
+
+    .intro-line {
+        position: fixed;
+        top: 50%;
+    }
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $texto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bienvenidos-index {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: black; //BLACK 111111
+    z-index: 3;
+    transition: all 1s ease;
+}
+
+.bienvenidos-index .flecha-bajar a,
+.bienvenidos-index .parrafo1,
+.bienvenidos-index .parrafo,
+.bienvenidos-index .texto-encabezado {
+    color: white;
+    z-index: 3;
+}
+
+.bienvenidos-index .menu-principal ul {
+    color: white;
+}
+
+.bienvenidos-index .display-4 span:nth-child(1) {
+    background: linear-gradient(to right, white, rgb(85, 85, 85), );
+}
+
+/*-----------------------*/
+/*SECCION NOSOTROS 
+/*-----------------------*/
+.bienvenidos {
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    background-size: cover
+}
+
+.bienvenidos-index .encabezado {
+    background: 111111;
+    color: black;
+    padding: .1rem 0;
+    transform: translateX(-1000px);
+}
+
+.bienvenidos .encabezado {
+    z-index: 4;
+}
+
+.encabezado.fondo-menu {
+    padding: 0rem 0;
+}
+
+.encabezado.fondo-menu ul li a {
+    color: white;
+}
+
+#menu-principal ul li a.active {
+    color: white;
+}
+
+.encabezado {
+    background: black;
+}
+
+.encabezado .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.encabezado h2 {
+    list-style: none;
+    font-size: .01px;
+    margin: -5px 0px 0px 100px;
+}
+
+/*Estilos para el boton: menu*/
+.boton-menu {
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: white;
+}
+
+.boton-menu:focus {
+    outline: 0;
+}
+
+.boton-menu {
+    margin-left: auto;
+    margin-right: .8rem;
+}
+
+/*Estilos bloque */
+#menu-principal {
+    flex: 1 1 100%;
+}
+
+#menu-principal ul {
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+}
+
+#menu-principal ul a {
+    display: block;
+    padding: .8rem 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-top: .2px solid white;
+    text-decoration: none;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+    color: white;
+}
+
+.texto-encabezado {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    color: #111111;
+    transition: all .5s ease;
+}
+
+.texto-encabezado .display-4 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    text-align: left;
+    letter-spacing: 18px;
+    width: 100%;
+}
+
+.texto-encabezado .container h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.display-4 span:nth-child(1) {
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background: linear-gradient(to right, rgb(85, 85, 85), white);
+    animation: animate1 10s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(400%);
+    }
+
+    100% {
+        transform: translateX(-3%);
+    }
+}
+
+.texto-encabezado .btn-primary {
+    margin-top: 1rem;
+}
+
+.encabezado h2 {
+    color: white;
+}
+
+.texto-encabezado .parrafo1,
+.texto-encabezado .parrafo {
+    text-align: left;
+}
+
+.rs {
+    transition: all .5s ease;
+}
+
+.bienvenidos-index .texto-encabezado p {
+    list-style: none;
+    color: white;
+    text-align: left;
+}
+
+.bienvenidos .texto-encabezado p {
+    list-style: none;
+    color: black;
+    text-align: left;
+}
+
+a {
+    color: white;
+    transition: all 1s ease;
+}
+
+.texto-encabezado a:hover,
+.rs:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: white;
+    border-color: transparent;
+    transition: all 1s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+    background-color: white;
+    border-color: transparent;
+}
+
+.acerca-de-nosotros {
+    background: black;
+}
+
+.acerca-de-nosotros .content {
+    position: absolute;
+    margin-top: 100vh;
+    width: 100%;
+}
+
+.acerca-de-nosotros section {
+    padding: 140px 0;
+}
+
+.acerca-de-nosotros .section-index {
+    color: white;
+    font-size: 25px;
+}
+
+.acerca-de-nosotros .section-heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.acerca-de-nosotros .section-subheading {
+    color: rgb(231, 231, 231);
+    margin: 10px 0;
+}
+
+.acerca-de-nosotros .section-subheading p {
+    font-size: 20px;
+}
+
+.acerca-de-nosotros .section-info {
+    font-size: 15px;
+    color: rgb(231, 231, 231);
+}
+
+.acerca-de-nosotros .more {
+    margin: 40px 0;
+}
+
+/*---------------------------------
+SECCION SERVICIOS
+------------------------------------*/
+
+.servicios {
+    background: white;
+}
+
+.servicios .service {
+    margin: 30px 0;
+}
+
+.servicios .icon ion-icon {
+    font-size: 36px;
+    color: black;
+}
+
+.servicios .icon-title {
+    font-size: 17px;
+    margin-bottom: 4px;
+    color: black;
+    font-weight: lighter;
+}
+
+.servicios .section-heading {
+    color: black;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.servicios .section-index {
+    color: black;
+    font-size: 25px;
+
+}
+
+// trabajo
+.trabajo {
+    background: black;
+}
+
+.trabajo .content {
+    position: absolute;
+    margin-top: 100vh;
+    width: 100%;
+}
+
+.trabajo section {
+    padding: 140px 0;
+}
+
+.trabajo .section-index {
+    color: white;
+    font-size: 30px;
+}
+
+.trabajo .section-heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.trabajo .section-subheading {
+    color: white;
+    margin: 10px 0;
+}
+
+.trabajo .section-subheading p {
+    font-size: 20px;
+    color: white;
+}
+
+.trabajo .section-info {
+    font-size: 16.5px;
+    color: white;
+}
+
+.trabajo .more {
+    margin: 40px 0;
+}
+
+.trabajo .imgb {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 150px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.trabajo .imgb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 0.7s;
+}
+
+.trabajo .imgb:hover img:nth-child(2) {
+    transform: translateX(-50%) scaleX(2);
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.trabajo .imgb img:nth-child(1) {
+    transform: translateX(50%) scaleX(2);
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.trabajo:hover .imgb img:nth-child(1) {
+    transform: translateX(0) scaleX(1);
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+.trabajo .titulo {
+    transform: translateY(100px);
+}
+
+.trabajo .titulo h1 {
+    color: white;
+}
+
+/*--CONTACTO-- */
+.contacto {
+    background: white;
+}
+
+.contacto p {
+    color: black;
+}
+
+.contacto .section-index {
+    font-size: 25px;
+    color: black;
+}
+
+.contacto .section-heading {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 22px;
+    color: black;
+}
+
+#contacto-form {
+    margin: 5% 0;
+}
+
+.contacto .icon-title {
+    margin-top: 10px;
+    color: black;
+}
+
+#contacto-form ul {
+    list-style: none;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+#contacto-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contacto-form label {
+    display: block;
+    font-size: 15px;
+    color: black
+}
+
+#contacto-form input,
+#contacto-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: white;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+@media(max-width: 900px) {
+    #contact-form {
+        margin: 5% 0;
+        width: 98%;
+    }
+}
+
+
+/*----------------------------------------
+SECCION PIE DE PAGINA
+-----------------------------------------*/
+.piedepagina {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.7rem;
+    font-size: 2.7rem;
+    color: black;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    display: none;
+    transition: all .5s ease;
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+    outline: 0;
+    text-decoration: none;
+    color: black;
+}
+
+/*ANIMACION SVG TITULO*/
+
+.svg path {
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animatep 8s cubic-bezier(0, 0.23, 1, .1);
+    animation-delay: 2.5s;
+}
+
+@keyframes animatep {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+/*SOCIAL MEDIA*/
+.medi {
+    position: absolute;
+    top: 38%;
+    z-index: 2;
+    right: 9%;
+}
+
+.medi ul {
+    position: absolute;
+    list-style: none;
+    transition: .5s;
+}
+
+.medi ul li a {
+    color: black;
+    padding: 10px 0;
+    display: inline-block !important;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: .5s;
+    line-height: 50px;
+    text-align: center;
+}
+
+.medi ul li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+.medi ul li a span:nth-child(1),
+.medi ul li a span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+
+}
+
+.medi ul li a:hover span:nth-child(2) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s;
+    background: #111111;
+}
+
+.medi ul li a span:nth-child(2) {
+    left: 17px;
+    transform-origin: left;
+}
+
+/*---------------------*/
+
+
+
+.buttos {
+    margin-top: 40px;
+    text-align: initial;
+}
+
+button {
+    margin-right: 10px !important;
+    padding: 5px 5px;
+    border: none;
+    color: #fff;
+    font-size: 28px !important;
+    letter-spacing: 4px;
+    font-weight: 300;
+    transition: all 1s ease;
+    box-shadow: 0 15px 40px rgb(51, 51, 51);
+}
+
+.bienvenidos-index button {
+    margin-right: 10px !important;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    font-size: 20px !important;
+    letter-spacing: 4px;
+    font-weight: 300;
+    transition: all 1s ease;
+    box-shadow: 0 15px 40px rgb(51, 51, 51);
+}
+
+.bienvenidos-index button a {
+    background: #111111;
+    color: #fff;
+    box-shadow: 0 15px 40px rgb(51, 51, 51);
+}
+
+.bienvenidos-index button:hover {
+    background: #fff;
+    color: #111111;
+}
+
+.bienvenidos button {
+    color: black;
+}
+
+button:hover {
+    color: white;
+}
+
+#one {
+    background: none;
+    border-radius: 7px;
+}
+
+#one:hover {
+    background: black;
+    border: #111111 solid;
+}
+
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+    color: white;
+
+}
+
+
+/*RING*/
+.ring {
+    margin: 0%;
+    padding: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 0;
+    width: 5%;
+    opacity: 0.7;
+}
+
+.ringOne img {
+    animation: rotateFirstRing 2s linear infinite;
+}
+
+.ringTwo img {
+    animation: rotateFirstRing 10s linear infinite;
+}
+
+@keyframes rotateFirstRing {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@media(max-width: 900px) {
+
+    .ring img {
+        display: none;
+    }
+
+
+
+}
+
+/*---------------------------------------------
+ MEDIAS Q
+--------------------------------------------*/
+@media (min-width: 320px) {
+    .paginas-internas .encabezado h2:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .servicios1 h1,
+    .testimonio h1,
+    .contactanos h1 {
+        letter-spacing: 0;
+    }
+
+    .bienvenidos-index .fa-angle-down:before {
+        content: none;
+    }
+
+    .bienvenidos-index button a {
+        font-size: 1.2rem;
+
+    }
+
+    .acerca-de-nosotros {
+        height: 125vh;
+    }
+
+    .acerca-de-nosotros .section-subheading p {
+        font-size: 25section-indexpx;
+    }
+
+    .servicios {
+        height: 210vh;
+    }
+
+    .trabajo {
+        height: 245vh;
+    }
+
+    .svg {
+        width: 115%;
+    }
+
+    .bienvenidos-index .encabezado h3 {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .paginas-internas .encabezado h2 {
+        font-size: .01px;
+        margin: -5px 0px 0px 100px;
+    }
+
+    #menu-principal {
+        height: auto !important;
+        display: block;
+        flex: 0 1 auto;
+        margin-left: auto;
+        order: 1
+    }
+
+    #menu-principal ul {
+        display: flex;
+        margin: 0 0 0 0
+    }
+
+    .bienvenidos #menu-principal ul li a {
+        padding: .6rem;
+        text-transform: capitalize;
+        margin: .2rem;
+        border-top: 0px;
+        border-bottom: 4px solid transparent;
+        transition: all .5s ease;
+        color: white;
+    }
+
+    .bienvenidos-index #menu-principal ul li a {
+        color: white;
+    }
+
+    .bienvenidos-index .imagen2 {
+        size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .bienvenidos-index .imagen2 img {
+
+        width: 113%;
+    }
+
+    .bienvenidos-index .imagen {
+        size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .boton-menu {
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 2
+    }
+
+    .acerca-de-nosotros {
+        height: 80vh;
+    }
+
+    .servicios {
+        height: 130vh;
+    }
+
+    .trabajo {
+        height: 120vh;
+    }
+
+    .trabajo .imgb {
+        width: 220px;
+        height: 150px;
+
+    }
+
+    .svg {
+        width: 200%;
+    }
+
+    .texto-encabezado .container {
+        max-width: 720px;
+        margin: 0px 100px;
+        z-index: 2;
+    }
+
+    .ring {
+        z-index: 1;
+    }
+
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 16px
+    }
+
+    .trabajo {
+        height: 250vh;
+    }
+
+    .trabajo .imgb {
+        width: 400px;
+        height: 300px;
+    }
+
+    .bienvenidos-index .texto-encabezado .container {
+        max-width: 900px;
+        margin: 0px 300px;
+    }
+
+    .bienvenidos .texto-encabezado .container {
+        max-width: 900px;
+        margin: 0px 150px;
+    }
+
+    .bienvenidos-index .texto-encabezado .container p {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .bienvenidos .texto-encabezado .container p {
+        font-size: 1rem;
+        color: black;
+    }
+
+    .texto-encabezado {
+        z-index: 2;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .bienvenidos-index .texto-encabezado .parrafo1,
+    .texto-encabezado .parrafo {
+        text-align: left;
+    }
+
+    .bienvenidos-index #menu-principal ul li a {
+        font-size: 1.5rem;
+    }
+
+    .bienvenidos-index object {
+        width: 257%;
+    }
+
+    .acerca-de-nosotros {
+        height: 50vh;
+    }
+
+    .servicios {
+        height: 80vh;
+    }
+
+    .svg {
+        width: 220%;
+    }
+
+    .bienvenidos-index .imagen {
+        left: 8.2rem;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .svg {
+        width: 200%;
+    }
+
+    .texto-encabezado .display-4 {
+        width: 100%;
+    }
+}
